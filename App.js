@@ -1,13 +1,12 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
-
+/* Package Import will lives here */
 import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
+/* Package Import will lives here */
+
+/* Project Import will lives here */
+import { scale } from './app/utils';
+import { Constants } from './app/config';
+/* Project Import will lives here */
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -21,7 +20,7 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
+        <Text style={styles.welcome}>{Constants.PROJECT_NAME}</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
       </View>
@@ -37,7 +36,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#F5FCFF',
   },
   welcome: {
-    fontSize: 30,
+    fontSize: scale(30),
     fontFamily: "Exo2-Bold",
     textAlign: 'center',
     margin: 10,
