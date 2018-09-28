@@ -1,5 +1,5 @@
 {
-  "name": "ReactNativeStatup",
+  "name": "react-native-statup",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -18,5 +18,10 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "rnpm":{
+    "assets":[
+      "./app/assets/fonts/exo"
+    ]
   }
 }

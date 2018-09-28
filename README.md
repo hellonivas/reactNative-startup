@@ -47,6 +47,19 @@ react-native link
 react-native run-android
 ```
 
+## Steps to add custome font
+* Copy and paste the Fonts in ./app/fonts/
+* Add the below code to Package.json file
+```
+"rnpm":{
+    "assets":[
+      "./app/assets/fonts"
+    ]
+  }
+```
+* Run the command "react-native link".
+* Then add the font family to the Text,Button,etc..
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
