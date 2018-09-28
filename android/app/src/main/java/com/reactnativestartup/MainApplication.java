@@ -1,4 +1,4 @@
-package com.reactnativestatup;
+package com.reactnativestartup;
 
 import android.app.Application;
 
