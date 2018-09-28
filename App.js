@@ -1,13 +1,16 @@
 /* Package Import will lives here */
 import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
+import { createIconSetFromIcoMoon } from 'react-native-vector-icons';
 /* Package Import will lives here */
 
 /* Project Import will lives here */
 import { scale } from './app/utils';
 import { Constants } from './app/config';
+import iconFontConfig from './app/assets/fonts/iconFont/Icon_Font.json'
 /* Project Import will lives here */
 
+const Icon = createIconSetFromIcoMoon(iconFontConfig);
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
   android:
@@ -20,6 +23,7 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
+        <Icon name="truck" size={130} color="#900" />
         <Text style={styles.welcome}>{Constants.PROJECT_NAME}</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
