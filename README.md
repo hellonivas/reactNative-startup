@@ -14,7 +14,7 @@ This is the basic startup project for React Native
 #### Git Clone
 
 ```
-https://github.com/sriniinfo/react-base.git
+https://github.com/sriniinfo/reactNative-startup.git
 ```
 
 ## To Run
@@ -22,7 +22,7 @@ https://github.com/sriniinfo/react-base.git
 #### Git Clone
 
 ```
-git clone https://github.com/sriniinfo/react-base.git
+git clone https://github.com/sriniinfo/reactNative-startup.git
 cd reactNative-startup
 npm install
 react-native run-android | react-native run-ios
